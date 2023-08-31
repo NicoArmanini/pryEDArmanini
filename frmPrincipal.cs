@@ -16,5 +16,11 @@ namespace pryEDArmanini
         {
             InitializeComponent();
         }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCola v = new frmCola();
+            v.ShowDialog();
+        }
     }
 }

@@ -34,11 +34,11 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(91, 202);
+            this.label1.Location = new System.Drawing.Point(53, 195);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 65);
+            this.label1.Size = new System.Drawing.Size(297, 84);
             this.label1.TabIndex = 0;
             this.label1.Text = "-DNI: 45.244.20\r\n-Nombre: Nicolas Armanini\r\n-Materia: Estrucura de Datos\r\n";
             // 
