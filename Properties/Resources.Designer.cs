@@ -103,6 +103,16 @@ namespace pryEDArmanini.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ListaSimple {
+            get {
+                object obj = ResourceManager.GetObject("ListaSimple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pila {
             get {
                 object obj = ResourceManager.GetObject("pila", resourceCulture);
