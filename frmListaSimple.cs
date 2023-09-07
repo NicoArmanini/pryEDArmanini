@@ -46,9 +46,21 @@ namespace pryEDArmanini
                 FilaPersonas.RecorrerGrilla(dgvTabla);
                 FilaPersonas.RecorrerLista(lstLista);
                 FilaPersonas.RecorrerArchivo();
+
+                ValidarDatos();
             }
+
             
             
+            
+        }
+
+        private void ValidarDatos()
+        {
+            cmbCodigo.SelectedIndex = -1;
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
         }
 
         private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)

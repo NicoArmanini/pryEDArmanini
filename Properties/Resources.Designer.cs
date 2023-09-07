@@ -73,6 +73,16 @@ namespace pryEDArmanini.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Doble {
+            get {
+                object obj = ResourceManager.GetObject("Doble", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fin {
             get {
                 object obj = ResourceManager.GetObject("fin", resourceCulture);
@@ -96,6 +106,16 @@ namespace pryEDArmanini.Properties {
         internal static System.Drawing.Bitmap ij {
             get {
                 object obj = ResourceManager.GetObject("ij", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ListaDoble {
+            get {
+                object obj = ResourceManager.GetObject("ListaDoble", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,6 +1,6 @@
 ﻿namespace pryEDArmanini
 {
-    partial class frmListaSimple
+    partial class frmListaDoble
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mrcListados = new System.Windows.Forms.GroupBox();
             this.dgvTabla = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,11 +50,15 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.pcbImagen = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.optDescendente = new System.Windows.Forms.RadioButton();
+            this.optAscendente = new System.Windows.Forms.RadioButton();
             this.mrcListados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             this.mrcEliminado.SuspendLayout();
             this.mrcNuevo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcListados
@@ -63,47 +67,47 @@
             this.mrcListados.Controls.Add(this.dgvTabla);
             this.mrcListados.Controls.Add(this.lstLista);
             this.mrcListados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mrcListados.Location = new System.Drawing.Point(11, 195);
+            this.mrcListados.Location = new System.Drawing.Point(24, 195);
             this.mrcListados.Name = "mrcListados";
             this.mrcListados.Size = new System.Drawing.Size(663, 213);
-            this.mrcListados.TabIndex = 10;
+            this.mrcListados.TabIndex = 14;
             this.mrcListados.TabStop = false;
             this.mrcListados.Text = "Listado en una Lista y una Grilla";
             // 
             // dgvTabla
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Nombre,
             this.Tramite});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTabla.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTabla.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTabla.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvTabla.Location = new System.Drawing.Point(229, 18);
             this.dgvTabla.Name = "dgvTabla";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTabla.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTabla.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTabla.Size = new System.Drawing.Size(428, 174);
             this.dgvTabla.TabIndex = 1;
             // 
@@ -140,10 +144,10 @@
             this.mrcEliminado.Controls.Add(this.btnEliminar);
             this.mrcEliminado.Controls.Add(this.lblCodigo1);
             this.mrcEliminado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mrcEliminado.Location = new System.Drawing.Point(476, 12);
+            this.mrcEliminado.Location = new System.Drawing.Point(489, 12);
             this.mrcEliminado.Name = "mrcEliminado";
-            this.mrcEliminado.Size = new System.Drawing.Size(198, 171);
-            this.mrcEliminado.TabIndex = 8;
+            this.mrcEliminado.Size = new System.Drawing.Size(198, 98);
+            this.mrcEliminado.TabIndex = 12;
             this.mrcEliminado.TabStop = false;
             this.mrcEliminado.Text = "Elemento Elminado";
             // 
@@ -151,27 +155,25 @@
             // 
             this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCodigo.FormattingEnabled = true;
-            this.cmbCodigo.Location = new System.Drawing.Point(68, 60);
+            this.cmbCodigo.Location = new System.Drawing.Point(62, 27);
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(106, 21);
             this.cmbCodigo.TabIndex = 4;
-            this.cmbCodigo.SelectedIndexChanged += new System.EventHandler(this.cmbCodigo_SelectedIndexChanged);
             // 
             // btnEliminar
             // 
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEliminar.Location = new System.Drawing.Point(10, 130);
+            this.btnEliminar.Location = new System.Drawing.Point(6, 56);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(182, 35);
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblCodigo1
             // 
             this.lblCodigo1.AutoSize = true;
-            this.lblCodigo1.Location = new System.Drawing.Point(17, 67);
+            this.lblCodigo1.Location = new System.Drawing.Point(11, 34);
             this.lblCodigo1.Name = "lblCodigo1";
             this.lblCodigo1.Size = new System.Drawing.Size(43, 13);
             this.lblCodigo1.TabIndex = 0;
@@ -189,10 +191,10 @@
             this.mrcNuevo.Controls.Add(this.lblNombre);
             this.mrcNuevo.Controls.Add(this.lblCodigo);
             this.mrcNuevo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mrcNuevo.Location = new System.Drawing.Point(252, 12);
+            this.mrcNuevo.Location = new System.Drawing.Point(265, 12);
             this.mrcNuevo.Name = "mrcNuevo";
             this.mrcNuevo.Size = new System.Drawing.Size(198, 171);
-            this.mrcNuevo.TabIndex = 9;
+            this.mrcNuevo.TabIndex = 13;
             this.mrcNuevo.TabStop = false;
             this.mrcNuevo.Text = "Nuevo Elemento";
             // 
@@ -226,7 +228,6 @@
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblTramite
             // 
@@ -257,28 +258,64 @@
             // 
             // pcbImagen
             // 
-            this.pcbImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pcbImagen.Image = global::pryEDArmanini.Properties.Resources.ListaSimple;
-            this.pcbImagen.Location = new System.Drawing.Point(12, 12);
+            this.pcbImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcbImagen.Image = global::pryEDArmanini.Properties.Resources.Doble;
+            this.pcbImagen.Location = new System.Drawing.Point(24, 6);
             this.pcbImagen.Name = "pcbImagen";
-            this.pcbImagen.Size = new System.Drawing.Size(171, 171);
+            this.pcbImagen.Size = new System.Drawing.Size(235, 177);
             this.pcbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbImagen.TabIndex = 7;
+            this.pcbImagen.TabIndex = 11;
             this.pcbImagen.TabStop = false;
             // 
-            // frmListaSimple
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.optDescendente);
+            this.groupBox1.Controls.Add(this.optAscendente);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Location = new System.Drawing.Point(489, 118);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(197, 71);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Listar Datos";
+            // 
+            // optDescendente
+            // 
+            this.optDescendente.AutoSize = true;
+            this.optDescendente.Location = new System.Drawing.Point(14, 42);
+            this.optDescendente.Name = "optDescendente";
+            this.optDescendente.Size = new System.Drawing.Size(89, 17);
+            this.optDescendente.TabIndex = 1;
+            this.optDescendente.TabStop = true;
+            this.optDescendente.Text = "Descendente";
+            this.optDescendente.UseVisualStyleBackColor = true;
+            // 
+            // optAscendente
+            // 
+            this.optAscendente.AutoSize = true;
+            this.optAscendente.Location = new System.Drawing.Point(14, 19);
+            this.optAscendente.Name = "optAscendente";
+            this.optAscendente.Size = new System.Drawing.Size(82, 17);
+            this.optAscendente.TabIndex = 0;
+            this.optAscendente.TabStop = true;
+            this.optAscendente.Text = "Ascendente";
+            this.optAscendente.UseVisualStyleBackColor = true;
+            // 
+            // frmListaDoble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pryEDArmanini.Properties.Resources.fin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(699, 425);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mrcListados);
             this.Controls.Add(this.mrcEliminado);
             this.Controls.Add(this.mrcNuevo);
             this.Controls.Add(this.pcbImagen);
-            this.Name = "frmListaSimple";
-            this.Text = "frmListaSimple";
+            this.Name = "frmListaDoble";
+            this.Text = "frmListaDoble";
             this.mrcListados.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
             this.mrcEliminado.ResumeLayout(false);
@@ -286,6 +323,8 @@
             this.mrcNuevo.ResumeLayout(false);
             this.mrcNuevo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -299,6 +338,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tramite;
         private System.Windows.Forms.ListBox lstLista;
         private System.Windows.Forms.GroupBox mrcEliminado;
+        private System.Windows.Forms.ComboBox cmbCodigo;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label lblCodigo1;
         private System.Windows.Forms.GroupBox mrcNuevo;
@@ -309,7 +349,9 @@
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton optDescendente;
+        private System.Windows.Forms.RadioButton optAscendente;
         private System.Windows.Forms.PictureBox pcbImagen;
-        private System.Windows.Forms.ComboBox cmbCodigo;
     }
 }
