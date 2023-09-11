@@ -40,5 +40,11 @@ namespace pryEDArmanini
             frmListaDoble v = new frmListaDoble();
             v.ShowDialog();
         }
+
+        private void listaDobleToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmListaDoble v = new frmListaDoble();
+            v.ShowDialog();
+        }
     }
 }

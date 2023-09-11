@@ -69,7 +69,7 @@
             this.mrcListados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mrcListados.Location = new System.Drawing.Point(24, 195);
             this.mrcListados.Name = "mrcListados";
-            this.mrcListados.Size = new System.Drawing.Size(663, 213);
+            this.mrcListados.Size = new System.Drawing.Size(662, 213);
             this.mrcListados.TabIndex = 14;
             this.mrcListados.TabStop = false;
             this.mrcListados.Text = "Listado en una Lista y una Grilla";
@@ -146,7 +146,7 @@
             this.mrcEliminado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mrcEliminado.Location = new System.Drawing.Point(489, 12);
             this.mrcEliminado.Name = "mrcEliminado";
-            this.mrcEliminado.Size = new System.Drawing.Size(198, 98);
+            this.mrcEliminado.Size = new System.Drawing.Size(197, 98);
             this.mrcEliminado.TabIndex = 12;
             this.mrcEliminado.TabStop = false;
             this.mrcEliminado.Text = "Elemento Elminado";
@@ -308,7 +308,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pryEDArmanini.Properties.Resources.fin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(708, 418);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mrcListados);
             this.Controls.Add(this.mrcEliminado);

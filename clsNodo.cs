@@ -35,7 +35,6 @@ namespace pryEDArmanini
             get { return tra; }
             set { tra = value; }
         }
-
         public clsNodo Siguiente
         {
             get { return sig; }
