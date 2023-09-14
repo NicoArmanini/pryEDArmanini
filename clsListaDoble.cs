@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryEDArmanini
 {
@@ -62,6 +63,109 @@ namespace pryEDArmanini
                         Nvo.Anterior = Ant;
                     }
                 }
+            }
+        }
+
+        public void Eliminar(Int32 Codigo)
+        {
+            if (Primero.Codigo == Codigo && Ultimo == Primero)
+            {
+                Primero = null;
+                Ultimo = null;
+            }
+            else
+            {
+                if (Primero.Codigo == Codigo)
+                {
+                    Primero = Primero.Siguiente;
+                    Primero.Anterior = null;
+                }
+                else
+                {
+                    if (Ultimo.Codigo == Codigo)
+                    {
+                        Ultimo = Ultimo.Anterior;
+                        Ultimo.Siguiente = null;
+                    }
+                    else
+                    {
+                        clsNodo Aux = Primero;
+                        clsNodo Ant = Primero;
+                        while (Aux.Codigo < Codigo)
+                        {
+                            Ant = Aux;
+                            Aux = Aux.Siguiente;
+                        }
+                        Ant.Siguiente = Aux.Siguiente;
+                        Aux = Aux.Siguiente;
+                        Aux.Anterior = Ant;
+                    }
+                }
+            }
+        }
+
+        public void RecorrerGrilla(DataGridView Grilla)
+        {
+            clsNodo aux = Primero;
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Siguiente;
+            }
+        }
+        public void RecorrerLista(ListBox Lista)
+        {
+            clsNodo aux = Primero;
+            Lista.Items.Clear();
+            while (aux != null)
+            {
+                Lista.Items.Add(aux.Codigo + " " + aux.Nombre + " " + aux.Tramite);
+                aux = aux.Siguiente;
+            }
+        }
+
+        public void RecorrerCombo(ComboBox Combo)
+        {
+            clsNodo aux = Primero;
+            Combo.Items.Clear();
+            while (aux != null)
+            {
+                Combo.Items.Add(aux.Nombre);
+                aux = aux.Siguiente;
+            }
+        }
+
+        public void RecorrerGrillaDes(DataGridView Grilla)
+        {
+            clsNodo aux = Primero;
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Anterior;
+            }
+        }
+
+        public void RecorrerListaDes(ListBox Lista)
+        {
+            clsNodo aux = Primero;
+            Lista.Items.Clear();
+            while (aux != null)
+            {
+                Lista.Items.Add(aux.Codigo + " " + aux.Nombre + " " + aux.Tramite);
+                aux = aux.Anterior;
+            }
+        }
+
+        public void RecorrerComboDes(ComboBox Combo)
+        {
+            clsNodo aux = Primero;
+            Combo.Items.Clear();
+            while (aux != null)
+            {
+                Combo.Items.Add(aux.Nombre);
+                aux = aux.Anterior;
             }
         }
     }

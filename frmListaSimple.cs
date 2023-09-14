@@ -67,5 +67,10 @@ namespace pryEDArmanini
         {
 
         }
+
+        private void mrcEliminado_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
