@@ -60,22 +60,23 @@ namespace pryEDArmanini
 
         private void optAscendente_CheckedChanged(object sender, EventArgs e)
         {
-            //if (optAscendente.Checked)
-            //{
-            //    FilaPersonas.RecorrerLista(lstLista);
-            //    FilaPersonas.RecorrerCombo(cmbCodigo);
-            //    FilaPersonas.RecorrerGrilla(dgvTabla);
-            //}
+            if (optAscendente.Checked)
+            {
+                FilaPersonas.RecorrerLista(lstLista);
+                FilaPersonas.RecorrerCombo(cmbCodigo);
+                FilaPersonas.RecorrerGrilla(dgvTabla);
+
+            }
         }
 
         private void optDescendente_CheckedChanged(object sender, EventArgs e)
         {
-            //if (optDescendente.Checked)
-            //{
-            //    FilaPersonas.RecorrerListaDes(lstLista);
-            //    FilaPersonas.RecorrerComboDes(cmbCodigo);
-            //    FilaPersonas.RecorrerGrillaDes(dgvTabla);
-            //}
+            if (optDescendente.Checked)
+            {
+                FilaPersonas.RecorrerListaDes(lstLista);
+                FilaPersonas.RecorrerComboDes(cmbCodigo);
+                FilaPersonas.RecorrerGrillaDes(dgvTabla);
+            }
         }
     }
 }

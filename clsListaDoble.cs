@@ -44,8 +44,8 @@ namespace pryEDArmanini
                 {
                     if (Nvo.Codigo > Ultimo.Codigo)
                     {
-                        Nvo.Siguiente = Ultimo;
-                        Ultimo.Anterior = Nvo;
+                        Nvo.Anterior = Ultimo;
+                        Ultimo.Siguiente = Nvo;
                         Ultimo = Nvo;
                     }
                     else
@@ -131,14 +131,14 @@ namespace pryEDArmanini
             Combo.Items.Clear();
             while (aux != null)
             {
-                Combo.Items.Add(aux.Nombre);
+                Combo.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
         }
 
         public void RecorrerGrillaDes(DataGridView Grilla)
         {
-            clsNodo aux = Primero;
+            clsNodo aux = Ultimo;
             Grilla.Rows.Clear();
             while (aux != null)
             {
@@ -149,7 +149,7 @@ namespace pryEDArmanini
 
         public void RecorrerListaDes(ListBox Lista)
         {
-            clsNodo aux = Primero;
+            clsNodo aux = Ultimo;
             Lista.Items.Clear();
             while (aux != null)
             {
@@ -160,7 +160,7 @@ namespace pryEDArmanini
 
         public void RecorrerComboDes(ComboBox Combo)
         {
-            clsNodo aux = Primero;
+            clsNodo aux = Ultimo;
             Combo.Items.Clear();
             while (aux != null)
             {
