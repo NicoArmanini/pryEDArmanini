@@ -30,9 +30,7 @@ namespace pryEDArmanini
             FilaPersonas.RecorrerLista(lstLista);
             FilaPersonas.RecorrerArchivo();
 
-            txtCodigo.Text = "";
-            txtNombre.Text = "";
-            txtTramite.Text = "";
+            ValidarDatos();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -49,10 +47,6 @@ namespace pryEDArmanini
 
                 ValidarDatos();
             }
-
-            
-            
-            
         }
 
         private void ValidarDatos()
@@ -61,16 +55,47 @@ namespace pryEDArmanini
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
+            txtNombre.Enabled = false;
+            txtTramite.Enabled = false;
+            btnAgregar.Enabled = false;
+            btnEliminar.Enabled = false;
         }
 
         private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbCodigo.SelectedIndex != -1)
+            {
+                btnEliminar.Enabled = true;
+            }
         }
 
         private void mrcEliminado_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text != "")
+            {
+                txtNombre.Enabled = true;
+            }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "")
+            {
+                txtTramite.Enabled = true;
+            }
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTramite.Text != "")
+            {
+                btnAgregar.Enabled = true;
+            }
         }
     }
 }

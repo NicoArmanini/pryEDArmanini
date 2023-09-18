@@ -139,5 +139,15 @@ namespace pryEDArmanini.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2023_03_10_at_18_53_37 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2023-03-10 at 18.53.37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

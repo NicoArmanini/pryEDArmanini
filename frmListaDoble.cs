@@ -18,6 +18,18 @@ namespace pryEDArmanini
         }
 
         clsListaDoble FilaPersonas = new clsListaDoble();
+
+        private void ValidarDatos()
+        {
+            cmbCodigo.SelectedIndex = -1;
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+            txtNombre.Enabled = false;
+            txtTramite.Enabled = false;
+            btnAgregar.Enabled = false;
+            btnEliminar.Enabled = false;
+        }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (FilaPersonas.Primero != null)
@@ -33,14 +45,6 @@ namespace pryEDArmanini
             }
         }
 
-        private void ValidarDatos()
-        {
-            cmbCodigo.SelectedIndex = -1;
-            txtCodigo.Text = "";
-            txtNombre.Text = "";
-            txtTramite.Text = "";
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             clsNodo objNodo = new clsNodo();
@@ -52,10 +56,7 @@ namespace pryEDArmanini
             FilaPersonas.RecorrerCombo(cmbCodigo);
             FilaPersonas.RecorrerGrilla(dgvTabla);
             FilaPersonas.RecorrerLista(lstLista);
-
-            txtCodigo.Text = "";
-            txtNombre.Text = "";
-            txtTramite.Text = "";
+            ValidarDatos();
         }
 
         private void optAscendente_CheckedChanged(object sender, EventArgs e)
@@ -76,6 +77,38 @@ namespace pryEDArmanini
                 FilaPersonas.RecorrerListaDes(lstLista);
                 FilaPersonas.RecorrerComboDes(cmbCodigo);
                 FilaPersonas.RecorrerGrillaDes(dgvTabla);
+            }
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text != "")
+            {
+                txtNombre.Enabled = true;
+            }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "")
+            {
+                txtTramite.Enabled = true;
+            }
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTramite.Text != "")
+            {
+                btnAgregar.Enabled = true;
+            }
+        }
+
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCodigo.SelectedIndex != -1)
+            {
+                btnEliminar.Enabled = true;
             }
         }
     }

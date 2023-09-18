@@ -27,5 +27,37 @@ namespace pryEDArmanini
             objArbol.Agregar(Persona);
             objArbol.Recorrer(dgvTabla);
         }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text != "")
+            {
+                txtNombre.Enabled = true;
+            }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "")
+            {
+                txtTramite.Enabled = true;
+            }
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTramite.Text != "")
+            {
+                btnAgregar.Enabled = true;
+            }
+        }
+
+        private void cmbCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCodigo.SelectedIndex != -1)
+            {
+                btnEliminar.Enabled = true;
+            }
+        }
     }
 }

@@ -52,5 +52,10 @@ namespace pryEDArmanini
             frmArbolBinario v = new frmArbolBinario();
             v.ShowDialog();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

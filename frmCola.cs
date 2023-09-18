@@ -17,6 +17,15 @@ namespace pryEDArmanini
             InitializeComponent();
         }
         clsCola FilaPersonas = new clsCola();
+        private void Reinicio()
+        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+            txtNombre.Enabled = false;
+            txtTramite.Enabled = false;
+            btnAgregar.Enabled = false;
+        }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             clsNodo objNodo = new clsNodo();
@@ -29,9 +38,7 @@ namespace pryEDArmanini
             FilaPersonas.RecorrerLista(lstLista);
             FilaPersonas.RecorrerArchivo();
 
-            txtCodigo.Text = "";
-            txtNombre.Text = "";
-            txtTramite.Text = "";
+            Reinicio();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -52,6 +59,30 @@ namespace pryEDArmanini
                 lblCod1.Text = "";
                 lblNom1.Text = "";
                 lblTram1.Text = "";
+            }
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text != "")
+            {
+                txtNombre.Enabled = true;
+            }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "")
+            {
+                txtTramite.Enabled = true;
+            }
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTramite.Text != "")
+            {
+                btnAgregar.Enabled = true;
             }
         }
     }
