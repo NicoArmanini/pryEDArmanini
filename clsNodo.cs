@@ -15,6 +15,9 @@ namespace pryEDArmanini
         private String tra;
         private clsNodo sig;
         private clsNodo ant;
+        private clsNodo izq;
+        private clsNodo der;
+
 
 
         //propiedades
@@ -47,5 +50,16 @@ namespace pryEDArmanini
             set { ant= value; }
         }
 
+        public clsNodo Izquierdo
+        {
+            get { return izq; }
+            set { izq = value; }
+        }
+
+        public clsNodo Derecho
+        {
+            get { return der; }
+            set { der = value; }
+        }
     }
 }
