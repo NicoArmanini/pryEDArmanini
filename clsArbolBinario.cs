@@ -52,16 +52,41 @@ namespace pryEDArmanini
             }
         }
 
-        public void Recorrer(DataGridView Grilla)
+        public void RecorrerInOrden(DataGridView Grilla)
         {
             Grilla.Rows.Clear();
             InOrdenAsc(Grilla, Raiz);
         }
-        private void InOrdenAsc(DataGridView Dgv, clsNodo R)
+        private void InOrdenAsc(DataGridView dgvTabla, clsNodo R)
         {
-            if (R.Izquierdo != null) InOrdenAsc(Dgv, R.Izquierdo);
-            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
-            if (R.Derecho != null) InOrdenAsc(Dgv, R.Derecho);
+            if (R.Izquierdo != null) InOrdenAsc(dgvTabla, R.Izquierdo);
+            dgvTabla.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            if (R.Derecho != null) InOrdenAsc(dgvTabla, R.Derecho);
+        }
+
+        public void RecorrerPreOrden(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PreOrdenAsc(Grilla, Raiz);
+        }
+        private void PreOrdenAsc(DataGridView dgvTabla, clsNodo R)
+        {
+            dgvTabla.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            if (R.Izquierdo != null) PreOrdenAsc(dgvTabla, R.Izquierdo);
+            if (R.Derecho != null) PreOrdenAsc(dgvTabla, R.Derecho);
+        }
+
+        public void RecorrerPostOrden(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PostOrdenAsc(Grilla, Raiz);
+        }
+
+        private void PostOrdenAsc(DataGridView dgvTabla, clsNodo R)
+        {
+            if (R.Izquierdo != null) PostOrdenAsc(dgvTabla, R.Izquierdo);
+            if (R.Derecho != null) PostOrdenAsc(dgvTabla, R.Derecho);
+            dgvTabla.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
         }
     }
 }

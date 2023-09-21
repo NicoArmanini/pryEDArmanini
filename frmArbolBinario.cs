@@ -25,7 +25,8 @@ namespace pryEDArmanini
             Persona.Tramite = txtTramite.Text;
 
             objArbol.Agregar(Persona);
-            objArbol.Recorrer(dgvTabla);
+            optInOrden.Checked = true;
+            objArbol.RecorrerInOrden(dgvTabla);
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
@@ -57,6 +58,29 @@ namespace pryEDArmanini
             if (cmbCodigo.SelectedIndex != -1)
             {
                 btnEliminar.Enabled = true;
+            }
+        }
+
+        private void optInOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (optInOrden.Checked)
+            {
+                objArbol.RecorrerInOrden(dgvTabla);
+            }
+        }
+
+        private void optPreOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (optPreOrden.Checked)
+            {
+                objArbol.RecorrerPreOrden(dgvTabla);
+            }
+        }
+        private void optPostOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (optPostOrden.Checked)
+            {
+                objArbol.RecorrerPostOrden(dgvTabla);
             }
         }
     }

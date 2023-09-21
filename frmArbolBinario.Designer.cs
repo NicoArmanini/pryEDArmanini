@@ -68,11 +68,9 @@
             this.mrcListados.Controls.Add(this.optInOrden);
             this.mrcListados.Controls.Add(this.dgvTabla);
             this.mrcListados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mrcListados.Location = new System.Drawing.Point(16, 240);
-            this.mrcListados.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcListados.Location = new System.Drawing.Point(12, 195);
             this.mrcListados.Name = "mrcListados";
-            this.mrcListados.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcListados.Size = new System.Drawing.Size(883, 267);
+            this.mrcListados.Size = new System.Drawing.Size(662, 217);
             this.mrcListados.TabIndex = 19;
             this.mrcListados.TabStop = false;
             this.mrcListados.Text = "Listado en una Lista y una Grilla";
@@ -80,37 +78,37 @@
             // optPostOrden
             // 
             this.optPostOrden.AutoSize = true;
-            this.optPostOrden.Location = new System.Drawing.Point(39, 176);
-            this.optPostOrden.Margin = new System.Windows.Forms.Padding(4);
+            this.optPostOrden.Location = new System.Drawing.Point(29, 143);
             this.optPostOrden.Name = "optPostOrden";
-            this.optPostOrden.Size = new System.Drawing.Size(96, 20);
+            this.optPostOrden.Size = new System.Drawing.Size(78, 17);
             this.optPostOrden.TabIndex = 4;
             this.optPostOrden.Text = "Post-Orden";
             this.optPostOrden.UseVisualStyleBackColor = true;
+            this.optPostOrden.CheckedChanged += new System.EventHandler(this.optPostOrden_CheckedChanged);
             // 
             // optPreOrden
             // 
             this.optPreOrden.AutoSize = true;
-            this.optPreOrden.Location = new System.Drawing.Point(39, 113);
-            this.optPreOrden.Margin = new System.Windows.Forms.Padding(4);
+            this.optPreOrden.Location = new System.Drawing.Point(29, 92);
             this.optPreOrden.Name = "optPreOrden";
-            this.optPreOrden.Size = new System.Drawing.Size(90, 20);
+            this.optPreOrden.Size = new System.Drawing.Size(73, 17);
             this.optPreOrden.TabIndex = 3;
             this.optPreOrden.Text = "Pre-Orden";
             this.optPreOrden.UseVisualStyleBackColor = true;
+            this.optPreOrden.CheckedChanged += new System.EventHandler(this.optPreOrden_CheckedChanged);
             // 
             // optInOrden
             // 
             this.optInOrden.AutoSize = true;
             this.optInOrden.Checked = true;
-            this.optInOrden.Location = new System.Drawing.Point(39, 52);
-            this.optInOrden.Margin = new System.Windows.Forms.Padding(4);
+            this.optInOrden.Location = new System.Drawing.Point(29, 42);
             this.optInOrden.Name = "optInOrden";
-            this.optInOrden.Size = new System.Drawing.Size(79, 20);
+            this.optInOrden.Size = new System.Drawing.Size(66, 17);
             this.optInOrden.TabIndex = 2;
             this.optInOrden.TabStop = true;
             this.optInOrden.Text = "In-Orden";
             this.optInOrden.UseVisualStyleBackColor = true;
+            this.optInOrden.CheckedChanged += new System.EventHandler(this.optInOrden_CheckedChanged);
             // 
             // dgvTabla
             // 
@@ -136,8 +134,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvTabla.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTabla.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvTabla.Location = new System.Drawing.Point(304, 22);
-            this.dgvTabla.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvTabla.Location = new System.Drawing.Point(228, 18);
             this.dgvTabla.Name = "dgvTabla";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -148,7 +145,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvTabla.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTabla.RowHeadersWidth = 51;
-            this.dgvTabla.Size = new System.Drawing.Size(571, 214);
+            this.dgvTabla.Size = new System.Drawing.Size(428, 174);
             this.dgvTabla.TabIndex = 1;
             // 
             // Codigo
@@ -180,11 +177,9 @@
             this.mrcEliminado.Controls.Add(this.btnEliminar);
             this.mrcEliminado.Controls.Add(this.lblCodigo1);
             this.mrcEliminado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mrcEliminado.Location = new System.Drawing.Point(636, 15);
-            this.mrcEliminado.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcEliminado.Location = new System.Drawing.Point(477, 12);
             this.mrcEliminado.Name = "mrcEliminado";
-            this.mrcEliminado.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcEliminado.Size = new System.Drawing.Size(263, 126);
+            this.mrcEliminado.Size = new System.Drawing.Size(197, 102);
             this.mrcEliminado.TabIndex = 17;
             this.mrcEliminado.TabStop = false;
             this.mrcEliminado.Text = "Elemento Elminado";
@@ -193,10 +188,9 @@
             // 
             this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCodigo.FormattingEnabled = true;
-            this.cmbCodigo.Location = new System.Drawing.Point(83, 33);
-            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbCodigo.Location = new System.Drawing.Point(62, 27);
             this.cmbCodigo.Name = "cmbCodigo";
-            this.cmbCodigo.Size = new System.Drawing.Size(140, 24);
+            this.cmbCodigo.Size = new System.Drawing.Size(106, 21);
             this.cmbCodigo.TabIndex = 4;
             this.cmbCodigo.SelectedIndexChanged += new System.EventHandler(this.cmbCodigo_SelectedIndexChanged);
             // 
@@ -204,10 +198,9 @@
             // 
             this.btnEliminar.Enabled = false;
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEliminar.Location = new System.Drawing.Point(8, 69);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Location = new System.Drawing.Point(6, 56);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(243, 43);
+            this.btnEliminar.Size = new System.Drawing.Size(182, 35);
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -215,10 +208,9 @@
             // lblCodigo1
             // 
             this.lblCodigo1.AutoSize = true;
-            this.lblCodigo1.Location = new System.Drawing.Point(15, 42);
-            this.lblCodigo1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCodigo1.Location = new System.Drawing.Point(11, 34);
             this.lblCodigo1.Name = "lblCodigo1";
-            this.lblCodigo1.Size = new System.Drawing.Size(54, 16);
+            this.lblCodigo1.Size = new System.Drawing.Size(43, 13);
             this.lblCodigo1.TabIndex = 0;
             this.lblCodigo1.Text = "Codigo:";
             // 
@@ -234,11 +226,9 @@
             this.mrcNuevo.Controls.Add(this.lblNombre);
             this.mrcNuevo.Controls.Add(this.lblCodigo);
             this.mrcNuevo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mrcNuevo.Location = new System.Drawing.Point(337, 15);
-            this.mrcNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcNuevo.Location = new System.Drawing.Point(253, 12);
             this.mrcNuevo.Name = "mrcNuevo";
-            this.mrcNuevo.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcNuevo.Size = new System.Drawing.Size(264, 215);
+            this.mrcNuevo.Size = new System.Drawing.Size(198, 175);
             this.mrcNuevo.TabIndex = 18;
             this.mrcNuevo.TabStop = false;
             this.mrcNuevo.Text = "Nuevo Elemento";
@@ -246,29 +236,26 @@
             // txtTramite
             // 
             this.txtTramite.Enabled = false;
-            this.txtTramite.Location = new System.Drawing.Point(97, 123);
-            this.txtTramite.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTramite.Location = new System.Drawing.Point(73, 100);
             this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(145, 22);
+            this.txtTramite.Size = new System.Drawing.Size(110, 20);
             this.txtTramite.TabIndex = 6;
             this.txtTramite.TextChanged += new System.EventHandler(this.txtTramite_TextChanged);
             // 
             // txtNombre
             // 
             this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(97, 82);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Location = new System.Drawing.Point(73, 67);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(145, 22);
+            this.txtNombre.Size = new System.Drawing.Size(110, 20);
             this.txtNombre.TabIndex = 5;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(97, 39);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Location = new System.Drawing.Point(73, 32);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(145, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(110, 20);
             this.txtCodigo.TabIndex = 4;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
@@ -276,10 +263,9 @@
             // 
             this.btnAgregar.Enabled = false;
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAgregar.Location = new System.Drawing.Point(13, 160);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(10, 130);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(243, 43);
+            this.btnAgregar.Size = new System.Drawing.Size(182, 35);
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -288,65 +274,59 @@
             // lblTramite
             // 
             this.lblTramite.AutoSize = true;
-            this.lblTramite.Location = new System.Drawing.Point(28, 127);
-            this.lblTramite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTramite.Location = new System.Drawing.Point(21, 103);
             this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(56, 16);
+            this.lblTramite.Size = new System.Drawing.Size(45, 13);
             this.lblTramite.TabIndex = 2;
             this.lblTramite.Text = "Tramite:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(27, 82);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Location = new System.Drawing.Point(20, 67);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre:";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(24, 43);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCodigo.Location = new System.Drawing.Point(18, 35);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(43, 13);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Codigo:";
             // 
             // btnEquilibrar
             // 
-            this.btnEquilibrar.Location = new System.Drawing.Point(636, 169);
-            this.btnEquilibrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEquilibrar.Location = new System.Drawing.Point(477, 137);
             this.btnEquilibrar.Name = "btnEquilibrar";
-            this.btnEquilibrar.Size = new System.Drawing.Size(263, 49);
+            this.btnEquilibrar.Size = new System.Drawing.Size(197, 40);
             this.btnEquilibrar.TabIndex = 20;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;
             // 
             // trvCuadro
             // 
-            this.trvCuadro.Location = new System.Drawing.Point(16, 15);
-            this.trvCuadro.Margin = new System.Windows.Forms.Padding(4);
+            this.trvCuadro.Location = new System.Drawing.Point(12, 12);
             this.trvCuadro.Name = "trvCuadro";
-            this.trvCuadro.Size = new System.Drawing.Size(303, 214);
+            this.trvCuadro.Size = new System.Drawing.Size(228, 175);
             this.trvCuadro.TabIndex = 21;
             // 
             // frmArbolBinario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pryEDArmanini.Properties.Resources.fin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(923, 522);
+            this.ClientSize = new System.Drawing.Size(692, 424);
             this.Controls.Add(this.trvCuadro);
             this.Controls.Add(this.btnEquilibrar);
             this.Controls.Add(this.mrcListados);
             this.Controls.Add(this.mrcEliminado);
             this.Controls.Add(this.mrcNuevo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmArbolBinario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arbol Binario";
