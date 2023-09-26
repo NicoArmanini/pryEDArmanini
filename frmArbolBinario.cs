@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace pryEDArmanini
 {
@@ -81,6 +82,32 @@ namespace pryEDArmanini
             if (optPostOrden.Checked)
             {
                 objArbol.RecorrerPostOrden(dgvTabla);
+            }
+        }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            if(optInOrden.Checked)
+            {
+                objArbol.ExportarIn(dgvTabla);
+            }
+            else
+            {
+                if (optPreOrden.Checked)
+                {
+                    objArbol.ExportarPre(dgvTabla);
+                }
+                else
+                {
+                    if (optPostOrden.Checked)
+                    {
+                        objArbol.ExportarPost(dgvTabla);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Seleccione una opcion de ordenamiento", "", MessageBoxButtons.OK);
+                    }
+                }
             }
         }
     }
