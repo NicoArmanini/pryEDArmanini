@@ -57,5 +57,11 @@ namespace pryEDArmanini
         {
             Close();
         }
+
+        private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDatosDesarrollador v = new frmDatosDesarrollador();
+            v.ShowDialog();
+        }
     }
 }

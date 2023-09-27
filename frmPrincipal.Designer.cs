@@ -79,6 +79,7 @@
             this.datosDelDesarrolladorToolStripMenuItem.Name = "datosDelDesarrolladorToolStripMenuItem";
             this.datosDelDesarrolladorToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.datosDelDesarrolladorToolStripMenuItem.Text = "Datos del Desarrollador...";
+            this.datosDelDesarrolladorToolStripMenuItem.Click += new System.EventHandler(this.datosDelDesarrolladorToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 

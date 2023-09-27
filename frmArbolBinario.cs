@@ -29,7 +29,6 @@ namespace pryEDArmanini
             txtTramite.Enabled = false;
             btnAgregar.Enabled = false;
             btnEliminar.Enabled = false;
-            btnExportar.Enabled = false;
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
