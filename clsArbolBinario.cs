@@ -120,20 +120,20 @@ namespace pryEDArmanini
         }
 
         private clsNodo[] Vector = new clsNodo[100];
-        private int i = 0;
+        private Int32 i = 0;
         public void Equilibrar()
         {
             i = 0;
             GrabarVectorInOrden(Raiz);
             Raiz = null;
-            EquilibrarArbol(0, i­-1);
+            EquilibrarArbol(0, i­ - 1);
         }
         public void Eliminar(Int32 codigo)
         {
             i = 0;
             GrabarVectorInOrden(Raiz, codigo);
             Raiz = null;
-            EquilibrarArbol(0, i-1);
+            EquilibrarArbol(0, i - 1);
         }
         private void EquilibrarArbol(Int32 ini, Int32 fin)
         {
@@ -141,7 +141,7 @@ namespace pryEDArmanini
             if (ini <= fin)
             {
                 Agregar(Vector[m]);
-                EquilibrarArbol(ini, m -1);
+                EquilibrarArbol(ini, m - 1);
                 EquilibrarArbol(m + 1, fin);
             }
         }
@@ -199,7 +199,7 @@ namespace pryEDArmanini
             }
         }
 
-        public void ExportarIn(DataGridView Grilla)
+        public void ExportarInOrden(DataGridView Grilla)
         {
             try
             {
@@ -210,7 +210,7 @@ namespace pryEDArmanini
                         foreach (DataGridViewCell cell in row.Cells)
                         {
                             // Escribe el valor de la celda en el archivo de texto
-                            writer.Write(cell.Value.ToString() + "\t");
+                            writer.Write(cell.Value + "\t");
                         }
                         writer.WriteLine(); // Salta a la siguiente línea
                     }
@@ -221,10 +221,9 @@ namespace pryEDArmanini
             {
                 MessageBox.Show("Error al guardar los datos: " + ex.Message);
             }
-
         }
 
-        public void ExportarPre(DataGridView Grilla)
+        public void ExportarPreOrden(DataGridView Grilla)
         {
             try
             {
@@ -235,7 +234,7 @@ namespace pryEDArmanini
                         foreach (DataGridViewCell cell in row.Cells)
                         {
                             // Escribe el valor de la celda en el archivo de texto
-                            writer.Write(cell.Value.ToString() + "\t");
+                            writer.Write(cell.Value + "\t");
                         }
                         writer.WriteLine(); // Salta a la siguiente línea
                     }
@@ -249,7 +248,7 @@ namespace pryEDArmanini
 
         }
 
-        public void ExportarPost(DataGridView Grilla)
+        public void ExportarPostOrden(DataGridView Grilla)
         {
             try
             {
@@ -260,7 +259,7 @@ namespace pryEDArmanini
                         foreach (DataGridViewCell cell in row.Cells)
                         {
                             // Escribe el valor de la celda en el archivo de texto
-                            writer.Write(cell.Value.ToString() + "\t");
+                            writer.Write(cell.Value + "\t");
                         }
                         writer.WriteLine(); // Salta a la siguiente línea
                     }

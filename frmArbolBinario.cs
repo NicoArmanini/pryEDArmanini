@@ -104,19 +104,19 @@ namespace pryEDArmanini
         {
             if(optInOrden.Checked)
             {
-                objArbol.ExportarIn(dgvTabla);
+                objArbol.ExportarInOrden(dgvTabla);
             }
             else
             {
                 if (optPreOrden.Checked)
                 {
-                    objArbol.ExportarPre(dgvTabla);
+                    objArbol.ExportarPreOrden(dgvTabla);
                 }
                 else
                 {
                     if (optPostOrden.Checked)
                     {
-                        objArbol.ExportarPost(dgvTabla);
+                        objArbol.ExportarPostOrden(dgvTabla);
                     }
                     else
                     {
