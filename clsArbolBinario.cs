@@ -63,7 +63,25 @@ namespace pryEDArmanini
                 }
             }
         }
-
+        //comboBOX
+        public void RecorrerCombo(ComboBox Combo)
+        {
+            Combo.Items.Clear();
+            InOrdenAsc(Combo, Raiz);
+        }
+        private void InOrdenAsc(ComboBox cmb, clsNodo R)
+        {
+            if (R.Izquierdo != null)
+            {
+                InOrdenAsc(cmb, R.Izquierdo);
+            }
+            cmb.Items.Add(R.Codigo);
+            if (R.Derecho != null)
+            {
+                InOrdenAsc(cmb, R.Derecho);
+            }
+        }
+        //dataGridView
         public void RecorrerInOrden(DataGridView Grilla)
         {
             Grilla.Rows.Clear();
@@ -161,7 +179,7 @@ namespace pryEDArmanini
         public void Recorrer(TreeView tree)
         {
             tree.Nodes.Clear();
-            TreeNode NodoPadre = new TreeNode("Árbol");
+            TreeNode NodoPadre = new TreeNode("Arbol");
             tree.Nodes.Add(NodoPadre);
             PreOrden(Raiz, NodoPadre);
             tree.ExpandAll();
@@ -177,6 +195,7 @@ namespace pryEDArmanini
             }
             if (R.Derecho != null)
             {
+                PreOrden(R.Derecho, NodoPadre);
             }
         }
 

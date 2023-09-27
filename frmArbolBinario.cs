@@ -18,6 +18,19 @@ namespace pryEDArmanini
             InitializeComponent();
         }
         clsArbolBinario objArbol = new clsArbolBinario();
+
+        private void ValidarDatos()
+        {
+            cmbCodigo.SelectedIndex = -1;
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+            txtNombre.Enabled = false;
+            txtTramite.Enabled = false;
+            btnAgregar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnExportar.Enabled = false;
+        }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             clsNodo Persona = new clsNodo();
@@ -26,8 +39,11 @@ namespace pryEDArmanini
             Persona.Tramite = txtTramite.Text;
 
             objArbol.Agregar(Persona);
-            optInOrden.Checked = true;
+            objArbol.RecorrerCombo(cmbCodigo);
             objArbol.RecorrerInOrden(dgvTabla);
+            objArbol.Recorrer(trvCuadro);
+
+            ValidarDatos();
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
@@ -109,6 +125,24 @@ namespace pryEDArmanini
                     }
                 }
             }
+        }
+
+        private void btnEquilibrar_Click(object sender, EventArgs e)
+        {
+            objArbol.Equilibrar();
+            objArbol.RecorrerInOrden(dgvTabla);
+            objArbol.Recorrer(trvCuadro);
+            objArbol.RecorrerCombo(cmbCodigo);
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            objArbol.Eliminar(Convert.ToInt32(cmbCodigo.Text));
+            objArbol.RecorrerInOrden(dgvTabla);
+            objArbol.Recorrer(trvCuadro);
+            objArbol.RecorrerCombo(cmbCodigo);
+
+           ValidarDatos();
         }
     }
 }

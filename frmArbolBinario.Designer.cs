@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbolBinario));
             this.mrcListados = new System.Windows.Forms.GroupBox();
+            this.btnExportar = new System.Windows.Forms.Button();
             this.optPostOrden = new System.Windows.Forms.RadioButton();
             this.optPreOrden = new System.Windows.Forms.RadioButton();
             this.optInOrden = new System.Windows.Forms.RadioButton();
@@ -54,7 +55,6 @@
             this.lblCodigo = new System.Windows.Forms.Label();
             this.btnEquilibrar = new System.Windows.Forms.Button();
             this.trvCuadro = new System.Windows.Forms.TreeView();
-            this.btnExportar = new System.Windows.Forms.Button();
             this.mrcListados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             this.mrcEliminado.SuspendLayout();
@@ -71,19 +71,30 @@
             this.mrcListados.Controls.Add(this.dgvTabla);
             this.mrcListados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mrcListados.Location = new System.Drawing.Point(16, 240);
-            this.mrcListados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcListados.Margin = new System.Windows.Forms.Padding(4);
             this.mrcListados.Name = "mrcListados";
-            this.mrcListados.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcListados.Padding = new System.Windows.Forms.Padding(4);
             this.mrcListados.Size = new System.Drawing.Size(883, 267);
             this.mrcListados.TabIndex = 19;
             this.mrcListados.TabStop = false;
             this.mrcListados.Text = "Listado en una Lista y una Grilla";
             // 
+            // btnExportar
+            // 
+            this.btnExportar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExportar.Location = new System.Drawing.Point(18, 183);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(231, 52);
+            this.btnExportar.TabIndex = 5;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
             // optPostOrden
             // 
             this.optPostOrden.AutoSize = true;
             this.optPostOrden.Location = new System.Drawing.Point(41, 130);
-            this.optPostOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.optPostOrden.Margin = new System.Windows.Forms.Padding(4);
             this.optPostOrden.Name = "optPostOrden";
             this.optPostOrden.Size = new System.Drawing.Size(96, 20);
             this.optPostOrden.TabIndex = 4;
@@ -95,7 +106,7 @@
             // 
             this.optPreOrden.AutoSize = true;
             this.optPreOrden.Location = new System.Drawing.Point(41, 82);
-            this.optPreOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.optPreOrden.Margin = new System.Windows.Forms.Padding(4);
             this.optPreOrden.Name = "optPreOrden";
             this.optPreOrden.Size = new System.Drawing.Size(90, 20);
             this.optPreOrden.TabIndex = 3;
@@ -106,13 +117,11 @@
             // optInOrden
             // 
             this.optInOrden.AutoSize = true;
-            this.optInOrden.Checked = true;
             this.optInOrden.Location = new System.Drawing.Point(41, 34);
-            this.optInOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.optInOrden.Margin = new System.Windows.Forms.Padding(4);
             this.optInOrden.Name = "optInOrden";
             this.optInOrden.Size = new System.Drawing.Size(79, 20);
             this.optInOrden.TabIndex = 2;
-            this.optInOrden.TabStop = true;
             this.optInOrden.Text = "In-Orden";
             this.optInOrden.UseVisualStyleBackColor = true;
             this.optInOrden.CheckedChanged += new System.EventHandler(this.optInOrden_CheckedChanged);
@@ -135,14 +144,14 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvTabla.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTabla.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvTabla.Location = new System.Drawing.Point(304, 22);
-            this.dgvTabla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTabla.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTabla.Name = "dgvTabla";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -186,9 +195,9 @@
             this.mrcEliminado.Controls.Add(this.lblCodigo1);
             this.mrcEliminado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mrcEliminado.Location = new System.Drawing.Point(636, 15);
-            this.mrcEliminado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcEliminado.Margin = new System.Windows.Forms.Padding(4);
             this.mrcEliminado.Name = "mrcEliminado";
-            this.mrcEliminado.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcEliminado.Padding = new System.Windows.Forms.Padding(4);
             this.mrcEliminado.Size = new System.Drawing.Size(263, 126);
             this.mrcEliminado.TabIndex = 17;
             this.mrcEliminado.TabStop = false;
@@ -199,7 +208,7 @@
             this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCodigo.FormattingEnabled = true;
             this.cmbCodigo.Location = new System.Drawing.Point(83, 33);
-            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCodigo.Name = "cmbCodigo";
             this.cmbCodigo.Size = new System.Drawing.Size(140, 24);
             this.cmbCodigo.TabIndex = 4;
@@ -210,12 +219,13 @@
             this.btnEliminar.Enabled = false;
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnEliminar.Location = new System.Drawing.Point(8, 69);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(243, 43);
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblCodigo1
             // 
@@ -240,9 +250,9 @@
             this.mrcNuevo.Controls.Add(this.lblCodigo);
             this.mrcNuevo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mrcNuevo.Location = new System.Drawing.Point(337, 15);
-            this.mrcNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.mrcNuevo.Name = "mrcNuevo";
-            this.mrcNuevo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcNuevo.Padding = new System.Windows.Forms.Padding(4);
             this.mrcNuevo.Size = new System.Drawing.Size(264, 215);
             this.mrcNuevo.TabIndex = 18;
             this.mrcNuevo.TabStop = false;
@@ -252,7 +262,7 @@
             // 
             this.txtTramite.Enabled = false;
             this.txtTramite.Location = new System.Drawing.Point(97, 123);
-            this.txtTramite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTramite.Margin = new System.Windows.Forms.Padding(4);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(145, 22);
             this.txtTramite.TabIndex = 6;
@@ -262,7 +272,7 @@
             // 
             this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(97, 82);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(145, 22);
             this.txtNombre.TabIndex = 5;
@@ -271,7 +281,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(97, 39);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(145, 22);
             this.txtCodigo.TabIndex = 4;
@@ -282,7 +292,7 @@
             this.btnAgregar.Enabled = false;
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAgregar.Location = new System.Drawing.Point(13, 160);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(243, 43);
             this.btnAgregar.TabIndex = 3;
@@ -323,31 +333,21 @@
             // btnEquilibrar
             // 
             this.btnEquilibrar.Location = new System.Drawing.Point(636, 169);
-            this.btnEquilibrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEquilibrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEquilibrar.Name = "btnEquilibrar";
             this.btnEquilibrar.Size = new System.Drawing.Size(263, 49);
             this.btnEquilibrar.TabIndex = 20;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;
+            this.btnEquilibrar.Click += new System.EventHandler(this.btnEquilibrar_Click);
             // 
             // trvCuadro
             // 
             this.trvCuadro.Location = new System.Drawing.Point(16, 15);
-            this.trvCuadro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trvCuadro.Margin = new System.Windows.Forms.Padding(4);
             this.trvCuadro.Name = "trvCuadro";
             this.trvCuadro.Size = new System.Drawing.Size(303, 214);
             this.trvCuadro.TabIndex = 21;
-            // 
-            // btnExportar
-            // 
-            this.btnExportar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExportar.Location = new System.Drawing.Point(18, 183);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(231, 52);
-            this.btnExportar.TabIndex = 5;
-            this.btnExportar.Text = "Exportar";
-            this.btnExportar.UseVisualStyleBackColor = true;
-            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // frmArbolBinario
             // 
@@ -362,7 +362,7 @@
             this.Controls.Add(this.mrcEliminado);
             this.Controls.Add(this.mrcNuevo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmArbolBinario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arbol Binario";
