@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsBaseDatos.cs" />
     <Compile Include="clsArbolBinario.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsListaDoble.cs" />
@@ -58,6 +59,12 @@
     <Compile Include="frmArbolBinario.Designer.cs">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBaseDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDeDatos.Designer.cs">
+      <DependentUpon>frmBaseDeDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +76,12 @@
     </Compile>
     <Compile Include="frmDatosDesarrollador.Designer.cs">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstructuraRamificada-ArbolBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstructuraRamificada-ArbolBinario.Designer.cs">
+      <DependentUpon>frmEstructuraRamificada-ArbolBinario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListaDoble.cs">
       <SubType>Form</SubType>
@@ -94,16 +107,28 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaSql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSql.Designer.cs">
+      <DependentUpon>frmConsultaSql.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmArbolBinario.resx">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseDeDatos.resx">
+      <DependentUpon>frmBaseDeDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstructuraRamificada-ArbolBinario.resx">
+      <DependentUpon>frmEstructuraRamificada-ArbolBinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaDoble.resx">
       <DependentUpon>frmListaDoble.cs</DependentUpon>
@@ -116,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaSql.resx">
+      <DependentUpon>frmConsultaSql.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -63,5 +63,23 @@ namespace pryEDArmanini
             frmDatosDesarrollador v = new frmDatosDesarrollador();
             v.ShowDialog();
         }
+
+        private void operacionesConTablasDeBasesDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaseDeDatos v = new frmBaseDeDatos();
+            v.ShowDialog();
+        }
+
+        private void consultasEnLaBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEstructuraRamificada_ArbolBinario v = new frmEstructuraRamificada_ArbolBinario();
+            v.ShowDialog();
+        }
+
+        private void repasoDeOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaSql v = new frmConsultaSql();
+            v.ShowDialog();
+        }
     }
 }
