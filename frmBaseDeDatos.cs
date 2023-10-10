@@ -24,6 +24,40 @@ namespace pryEDArmanini
             objBaseDatos.Listar(dgvBD, varSql); 
         }
 
+        private void btnMulti_Click(object sender, EventArgs e)
+        {
+            String varSql = "Select * from libro " + "where IdAutor = 2 " + "order by 1 asc ";
+            objBaseDatos.Listar(dgvBD, varSql);
+        }
+
+        private void btnJuntar_Click(object sender, EventArgs e)
+        {
+            String varSql = "Select * from libro, Idioma " + "where Libro.IdIdioma = Idioma.IdIdioma " + "order by 1 asc ";
+            objBaseDatos.Listar(dgvBD, varSql);
+        }
+
+        private void btnSelecSimple_Click(object sender, EventArgs e)
+        {
+            String varSql = "Select * from libro " + "where IdAutor = 2 " + "order by 1 asc ";
+            objBaseDatos.Listar(dgvBD, varSql);
+        }
+
+        private void btnSelecMulti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSelecConv_Click(object sender, EventArgs e)
+        {
+            String varSql = "Select * from libro, Idioma " + "where Libro.IdIdioma = Idioma.IdIdioma " + "order by 1 asc ";
+            objBaseDatos.Listar(dgvBD, varSql);
+        }
+
+        private void btnUnion_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnInter_Click(object sender, EventArgs e)
         {
             String varSql = "Select * from libro " + "where idIdioma = 2 and " + "idLibro in " +
@@ -31,10 +65,9 @@ namespace pryEDArmanini
             objBaseDatos.Listar(dgvBD, varSql);
         }
 
-        private void btnMulti_Click(object sender, EventArgs e)
+        private void btnDiferencia_Click(object sender, EventArgs e)
         {
-            String varSql = "Select * from libro " + "where IdAutor = 2 " + "order by 1 asc ";
-            objBaseDatos.Listar(dgvBD, varSql);
+
         }
     }
 }
