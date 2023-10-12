@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDArmanini
 {
-    public partial class frmEstructuraRamificada_ArbolBinario : Form
+    public partial class frmRepaso : Form
     {
-        public frmEstructuraRamificada_ArbolBinario()
+        public frmRepaso()
         {
             InitializeComponent();
         }

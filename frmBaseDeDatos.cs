@@ -28,9 +28,7 @@ namespace pryEDArmanini
 
         private void btnMulti_Click(object sender, EventArgs e)
         {
-            String varSql = "Select * from libro " +
-                "where IdAutor = 2 " +
-                "order by 1 asc ";
+            String varSql = "SELECT * FROM Libro";
             objBaseDatos.Listar(dgvBD, varSql);
         }
 
@@ -43,14 +41,13 @@ namespace pryEDArmanini
 
         private void btnSelecSimple_Click(object sender, EventArgs e)
         {
-            String varSql = "Select * from libro " + "where IdAutor = 2 ";
+            String varSql = "SELECT * FROM Libro WHERE idlibro > 20";
             objBaseDatos.Listar(dgvBD, varSql);
         }
 
         private void btnSelecMulti_Click(object sender, EventArgs e)
         {
-            String varSql = "SELECT * FROM Libro WHERE IdAutor > 10 " +
-               "INTERSECT SELECT * FROM Libro WHERE IdIdioma > 5";
+            String varSql = "SELECT * FROM Libro WHERE idIdioma = 3 And idAutor = 18" ;
             objBaseDatos.Listar(dgvBD, varSql);
         }
 

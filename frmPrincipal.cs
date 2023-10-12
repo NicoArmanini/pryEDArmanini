@@ -72,8 +72,7 @@ namespace pryEDArmanini
 
         private void consultasEnLaBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEstructuraRamificada_ArbolBinario v = new frmEstructuraRamificada_ArbolBinario();
-            v.ShowDialog();
+           
         }
 
         private void repasoDeOperacionesToolStripMenuItem_Click(object sender, EventArgs e)

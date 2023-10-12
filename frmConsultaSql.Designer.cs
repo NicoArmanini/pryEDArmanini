@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.txtSql = new System.Windows.Forms.TextBox();
             this.btnListar = new System.Windows.Forms.Button();
-            this.cboOperacion = new System.Windows.Forms.ComboBox();
+            this.cmbConsulta = new System.Windows.Forms.ComboBox();
             this.lblOperacion = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,14 +44,6 @@
             this.dgvDatos.Size = new System.Drawing.Size(750, 287);
             this.dgvDatos.TabIndex = 9;
             // 
-            // txtSql
-            // 
-            this.txtSql.Location = new System.Drawing.Point(25, 44);
-            this.txtSql.Multiline = true;
-            this.txtSql.Name = "txtSql";
-            this.txtSql.Size = new System.Drawing.Size(750, 98);
-            this.txtSql.TabIndex = 8;
-            // 
             // btnListar
             // 
             this.btnListar.Location = new System.Drawing.Point(700, 15);
@@ -62,13 +54,24 @@
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // cboOperacion
+            // cmbConsulta
             // 
-            this.cboOperacion.FormattingEnabled = true;
-            this.cboOperacion.Location = new System.Drawing.Point(233, 17);
-            this.cboOperacion.Name = "cboOperacion";
-            this.cboOperacion.Size = new System.Drawing.Size(447, 21);
-            this.cboOperacion.TabIndex = 6;
+            this.cmbConsulta.FormattingEnabled = true;
+            this.cmbConsulta.Items.AddRange(new object[] {
+            "Diferencia",
+            "Interseccion",
+            "Juntar",
+            "Proyeccion Simple",
+            "Proyeccion Multiatributo",
+            "Seleccion Multiatributo con operador AND",
+            "Seleccion Multiatributo con operador OR",
+            "Seleccion Multiatributo por Convolucion",
+            "Seleccion Simple",
+            "Union"});
+            this.cmbConsulta.Location = new System.Drawing.Point(233, 17);
+            this.cmbConsulta.Name = "cmbConsulta";
+            this.cmbConsulta.Size = new System.Drawing.Size(447, 21);
+            this.cmbConsulta.TabIndex = 6;
             // 
             // lblOperacion
             // 
@@ -79,15 +82,24 @@
             this.lblOperacion.TabIndex = 5;
             this.lblOperacion.Text = "Operacion a realizar en la base de Datos:";
             // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDescripcion.Location = new System.Drawing.Point(25, 47);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(750, 90);
+            this.lblDescripcion.TabIndex = 10;
+            this.lblDescripcion.Text = ".";
+            // 
             // frmConsultaSql
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.dgvDatos);
-            this.Controls.Add(this.txtSql);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.cboOperacion);
+            this.Controls.Add(this.cmbConsulta);
             this.Controls.Add(this.lblOperacion);
             this.Name = "frmConsultaSql";
             this.Text = "Repaso";
@@ -100,9 +112,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.TextBox txtSql;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.ComboBox cboOperacion;
+        private System.Windows.Forms.ComboBox cmbConsulta;
         private System.Windows.Forms.Label lblOperacion;
+        private System.Windows.Forms.Label lblDescripcion;
     }
 }
