@@ -53,9 +53,9 @@
             this.mecAlg.Controls.Add(this.btnDiferencia);
             this.mecAlg.Controls.Add(this.btnUnion);
             this.mecAlg.Location = new System.Drawing.Point(711, 389);
-            this.mecAlg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mecAlg.Margin = new System.Windows.Forms.Padding(4);
             this.mecAlg.Name = "mecAlg";
-            this.mecAlg.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mecAlg.Padding = new System.Windows.Forms.Padding(4);
             this.mecAlg.Size = new System.Drawing.Size(339, 219);
             this.mecAlg.TabIndex = 7;
             this.mecAlg.TabStop = false;
@@ -64,7 +64,7 @@
             // btnInter
             // 
             this.btnInter.Location = new System.Drawing.Point(8, 101);
-            this.btnInter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInter.Margin = new System.Windows.Forms.Padding(4);
             this.btnInter.Name = "btnInter";
             this.btnInter.Size = new System.Drawing.Size(309, 42);
             this.btnInter.TabIndex = 7;
@@ -75,7 +75,7 @@
             // btnDiferencia
             // 
             this.btnDiferencia.Location = new System.Drawing.Point(8, 165);
-            this.btnDiferencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDiferencia.Margin = new System.Windows.Forms.Padding(4);
             this.btnDiferencia.Name = "btnDiferencia";
             this.btnDiferencia.Size = new System.Drawing.Size(309, 42);
             this.btnDiferencia.TabIndex = 3;
@@ -86,7 +86,7 @@
             // btnUnion
             // 
             this.btnUnion.Location = new System.Drawing.Point(8, 39);
-            this.btnUnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUnion.Margin = new System.Windows.Forms.Padding(4);
             this.btnUnion.Name = "btnUnion";
             this.btnUnion.Size = new System.Drawing.Size(309, 42);
             this.btnUnion.TabIndex = 8;
@@ -100,9 +100,9 @@
             this.mecWhere.Controls.Add(this.btnSelecMulti);
             this.mecWhere.Controls.Add(this.btnSelecSimple);
             this.mecWhere.Location = new System.Drawing.Point(363, 389);
-            this.mecWhere.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mecWhere.Margin = new System.Windows.Forms.Padding(4);
             this.mecWhere.Name = "mecWhere";
-            this.mecWhere.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mecWhere.Padding = new System.Windows.Forms.Padding(4);
             this.mecWhere.Size = new System.Drawing.Size(339, 219);
             this.mecWhere.TabIndex = 6;
             this.mecWhere.TabStop = false;
@@ -111,7 +111,7 @@
             // btnSelecConv
             // 
             this.btnSelecConv.Location = new System.Drawing.Point(8, 165);
-            this.btnSelecConv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelecConv.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelecConv.Name = "btnSelecConv";
             this.btnSelecConv.Size = new System.Drawing.Size(309, 42);
             this.btnSelecConv.TabIndex = 6;
@@ -122,7 +122,7 @@
             // btnSelecMulti
             // 
             this.btnSelecMulti.Location = new System.Drawing.Point(8, 101);
-            this.btnSelecMulti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelecMulti.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelecMulti.Name = "btnSelecMulti";
             this.btnSelecMulti.Size = new System.Drawing.Size(309, 42);
             this.btnSelecMulti.TabIndex = 4;
@@ -133,7 +133,7 @@
             // btnSelecSimple
             // 
             this.btnSelecSimple.Location = new System.Drawing.Point(8, 39);
-            this.btnSelecSimple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelecSimple.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelecSimple.Name = "btnSelecSimple";
             this.btnSelecSimple.Size = new System.Drawing.Size(309, 42);
             this.btnSelecSimple.TabIndex = 5;
@@ -147,9 +147,9 @@
             this.mrcSelect.Controls.Add(this.btnMulti);
             this.mrcSelect.Controls.Add(this.btnSimple);
             this.mrcSelect.Location = new System.Drawing.Point(16, 389);
-            this.mrcSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcSelect.Margin = new System.Windows.Forms.Padding(4);
             this.mrcSelect.Name = "mrcSelect";
-            this.mrcSelect.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mrcSelect.Padding = new System.Windows.Forms.Padding(4);
             this.mrcSelect.Size = new System.Drawing.Size(339, 219);
             this.mrcSelect.TabIndex = 5;
             this.mrcSelect.TabStop = false;
@@ -158,7 +158,7 @@
             // btnJuntar
             // 
             this.btnJuntar.Location = new System.Drawing.Point(21, 165);
-            this.btnJuntar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnJuntar.Margin = new System.Windows.Forms.Padding(4);
             this.btnJuntar.Name = "btnJuntar";
             this.btnJuntar.Size = new System.Drawing.Size(309, 42);
             this.btnJuntar.TabIndex = 2;
@@ -169,7 +169,7 @@
             // btnMulti
             // 
             this.btnMulti.Location = new System.Drawing.Point(21, 101);
-            this.btnMulti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMulti.Margin = new System.Windows.Forms.Padding(4);
             this.btnMulti.Name = "btnMulti";
             this.btnMulti.Size = new System.Drawing.Size(309, 42);
             this.btnMulti.TabIndex = 1;
@@ -180,7 +180,7 @@
             // btnSimple
             // 
             this.btnSimple.Location = new System.Drawing.Point(21, 39);
-            this.btnSimple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSimple.Margin = new System.Windows.Forms.Padding(4);
             this.btnSimple.Name = "btnSimple";
             this.btnSimple.Size = new System.Drawing.Size(309, 42);
             this.btnSimple.TabIndex = 0;
@@ -191,8 +191,8 @@
             // dgvBD
             // 
             this.dgvBD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBD.Location = new System.Drawing.Point(16, 15);
-            this.dgvBD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvBD.Location = new System.Drawing.Point(17, 15);
+            this.dgvBD.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBD.Name = "dgvBD";
             this.dgvBD.RowHeadersWidth = 51;
             this.dgvBD.Size = new System.Drawing.Size(1033, 366);
@@ -207,7 +207,7 @@
             this.Controls.Add(this.mecWhere);
             this.Controls.Add(this.mrcSelect);
             this.Controls.Add(this.dgvBD);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBaseDeDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBaseDeDatos";
