@@ -29,57 +29,76 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaBaseDatos));
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.btnListar = new System.Windows.Forms.Button();
-            this.dgvConsulta = new System.Windows.Forms.DataGridView();
-            this.rtbConsulta = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
+            this.cmbConsulta = new System.Windows.Forms.ComboBox();
+            this.lblOperacion = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgvDatos
+            // 
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(33, 183);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.RowHeadersWidth = 51;
+            this.dgvDatos.Size = new System.Drawing.Size(1000, 353);
+            this.dgvDatos.TabIndex = 9;
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(770, 245);
+            this.btnListar.Location = new System.Drawing.Point(933, 18);
             this.btnListar.Margin = new System.Windows.Forms.Padding(4);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(88, 32);
+            this.btnListar.Size = new System.Drawing.Size(100, 28);
             this.btnListar.TabIndex = 7;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // dgvConsulta
+            // cmbConsulta
             // 
-            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsulta.Location = new System.Drawing.Point(9, 285);
-            this.dgvConsulta.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvConsulta.Name = "dgvConsulta";
-            this.dgvConsulta.RowHeadersWidth = 51;
-            this.dgvConsulta.Size = new System.Drawing.Size(849, 232);
-            this.dgvConsulta.TabIndex = 6;
+            this.cmbConsulta.FormattingEnabled = true;
+            this.cmbConsulta.Items.AddRange(new object[] {
+            "Diferencia",
+            "Interseccion",
+            "Juntar",
+            "Proyeccion Simple",
+            "Proyeccion Multiatributo",
+            "Seleccion Multiatributo con operador AND",
+            "Seleccion Multiatributo con operador OR",
+            "Seleccion Multiatributo por Convolucion",
+            "Seleccion Simple",
+            "Union"});
+            this.cmbConsulta.Location = new System.Drawing.Point(317, 21);
+            this.cmbConsulta.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbConsulta.Name = "cmbConsulta";
+            this.cmbConsulta.Size = new System.Drawing.Size(589, 24);
+            this.cmbConsulta.TabIndex = 6;
             // 
-            // rtbConsulta
+            // lblOperacion
             // 
-            this.rtbConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbConsulta.Location = new System.Drawing.Point(9, 40);
-            this.rtbConsulta.Margin = new System.Windows.Forms.Padding(4);
-            this.rtbConsulta.Multiline = false;
-            this.rtbConsulta.Name = "rtbConsulta";
-            this.rtbConsulta.Size = new System.Drawing.Size(847, 197);
-            this.rtbConsulta.TabIndex = 4;
-            this.rtbConsulta.Text = "";
+            this.lblOperacion.AutoSize = true;
+            this.lblOperacion.BackColor = System.Drawing.Color.Transparent;
+            this.lblOperacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblOperacion.Location = new System.Drawing.Point(33, 23);
+            this.lblOperacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOperacion.Name = "lblOperacion";
+            this.lblOperacion.Size = new System.Drawing.Size(255, 16);
+            this.lblOperacion.TabIndex = 5;
+            this.lblOperacion.Text = "Operacion a realizar en la base de Datos:";
             // 
-            // label1
+            // lblDescripcion
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(10, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Consulta SQL";
+            this.lblDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDescripcion.Location = new System.Drawing.Point(33, 58);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(1000, 111);
+            this.lblDescripcion.TabIndex = 10;
+            this.lblDescripcion.Text = ".";
             // 
             // frmConsultaBaseDatos
             // 
@@ -87,15 +106,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pryEDArmanini.Properties.Resources.fin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(877, 530);
+            this.ClientSize = new System.Drawing.Size(1062, 567);
+            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.dgvConsulta);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.rtbConsulta);
+            this.Controls.Add(this.cmbConsulta);
+            this.Controls.Add(this.lblOperacion);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmConsultaBaseDatos";
             this.Text = "Consulta en la Base de Datos";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,9 +124,10 @@
 
         #endregion
 
+        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridView dgvConsulta;
-        private System.Windows.Forms.RichTextBox rtbConsulta;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbConsulta;
+        private System.Windows.Forms.Label lblOperacion;
+        private System.Windows.Forms.Label lblDescripcion;
     }
 }

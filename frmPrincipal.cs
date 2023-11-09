@@ -72,12 +72,13 @@ namespace pryEDArmanini
 
         private void consultasEnLaBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            frmConsultaBaseDatos v = new frmConsultaBaseDatos();
+            v.ShowDialog();
         }
 
         private void repasoDeOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsultaSql v = new frmConsultaSql();
+            frmRepaso v = new frmRepaso();
             v.ShowDialog();
         }
     }
