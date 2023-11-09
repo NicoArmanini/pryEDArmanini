@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBaseDeDatos));
             this.mecAlg = new System.Windows.Forms.GroupBox();
             this.btnInter = new System.Windows.Forms.Button();
             this.btnDiferencia = new System.Windows.Forms.Button();
@@ -49,9 +50,11 @@
             // 
             // mecAlg
             // 
+            this.mecAlg.BackColor = System.Drawing.Color.Transparent;
             this.mecAlg.Controls.Add(this.btnInter);
             this.mecAlg.Controls.Add(this.btnDiferencia);
             this.mecAlg.Controls.Add(this.btnUnion);
+            this.mecAlg.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mecAlg.Location = new System.Drawing.Point(711, 389);
             this.mecAlg.Margin = new System.Windows.Forms.Padding(4);
             this.mecAlg.Name = "mecAlg";
@@ -63,6 +66,7 @@
             // 
             // btnInter
             // 
+            this.btnInter.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnInter.Location = new System.Drawing.Point(8, 101);
             this.btnInter.Margin = new System.Windows.Forms.Padding(4);
             this.btnInter.Name = "btnInter";
@@ -74,6 +78,7 @@
             // 
             // btnDiferencia
             // 
+            this.btnDiferencia.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnDiferencia.Location = new System.Drawing.Point(8, 165);
             this.btnDiferencia.Margin = new System.Windows.Forms.Padding(4);
             this.btnDiferencia.Name = "btnDiferencia";
@@ -85,6 +90,7 @@
             // 
             // btnUnion
             // 
+            this.btnUnion.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnUnion.Location = new System.Drawing.Point(8, 39);
             this.btnUnion.Margin = new System.Windows.Forms.Padding(4);
             this.btnUnion.Name = "btnUnion";
@@ -96,9 +102,11 @@
             // 
             // mecWhere
             // 
+            this.mecWhere.BackColor = System.Drawing.Color.Transparent;
             this.mecWhere.Controls.Add(this.btnSelecConv);
             this.mecWhere.Controls.Add(this.btnSelecMulti);
             this.mecWhere.Controls.Add(this.btnSelecSimple);
+            this.mecWhere.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mecWhere.Location = new System.Drawing.Point(363, 389);
             this.mecWhere.Margin = new System.Windows.Forms.Padding(4);
             this.mecWhere.Name = "mecWhere";
@@ -110,6 +118,7 @@
             // 
             // btnSelecConv
             // 
+            this.btnSelecConv.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSelecConv.Location = new System.Drawing.Point(8, 165);
             this.btnSelecConv.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelecConv.Name = "btnSelecConv";
@@ -121,6 +130,7 @@
             // 
             // btnSelecMulti
             // 
+            this.btnSelecMulti.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSelecMulti.Location = new System.Drawing.Point(8, 101);
             this.btnSelecMulti.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelecMulti.Name = "btnSelecMulti";
@@ -132,6 +142,7 @@
             // 
             // btnSelecSimple
             // 
+            this.btnSelecSimple.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSelecSimple.Location = new System.Drawing.Point(8, 39);
             this.btnSelecSimple.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelecSimple.Name = "btnSelecSimple";
@@ -143,9 +154,11 @@
             // 
             // mrcSelect
             // 
+            this.mrcSelect.BackColor = System.Drawing.Color.Transparent;
             this.mrcSelect.Controls.Add(this.btnJuntar);
             this.mrcSelect.Controls.Add(this.btnMulti);
             this.mrcSelect.Controls.Add(this.btnSimple);
+            this.mrcSelect.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.mrcSelect.Location = new System.Drawing.Point(16, 389);
             this.mrcSelect.Margin = new System.Windows.Forms.Padding(4);
             this.mrcSelect.Name = "mrcSelect";
@@ -157,6 +170,7 @@
             // 
             // btnJuntar
             // 
+            this.btnJuntar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnJuntar.Location = new System.Drawing.Point(21, 165);
             this.btnJuntar.Margin = new System.Windows.Forms.Padding(4);
             this.btnJuntar.Name = "btnJuntar";
@@ -168,6 +182,7 @@
             // 
             // btnMulti
             // 
+            this.btnMulti.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMulti.Location = new System.Drawing.Point(21, 101);
             this.btnMulti.Margin = new System.Windows.Forms.Padding(4);
             this.btnMulti.Name = "btnMulti";
@@ -179,6 +194,7 @@
             // 
             // btnSimple
             // 
+            this.btnSimple.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSimple.Location = new System.Drawing.Point(21, 39);
             this.btnSimple.Margin = new System.Windows.Forms.Padding(4);
             this.btnSimple.Name = "btnSimple";
@@ -202,15 +218,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::pryEDArmanini.Properties.Resources.fin;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1088, 623);
             this.Controls.Add(this.mecAlg);
             this.Controls.Add(this.mecWhere);
             this.Controls.Add(this.mrcSelect);
             this.Controls.Add(this.dgvBD);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBaseDeDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmBaseDeDatos";
+            this.Text = "Operaciones Base de Datos";
             this.mecAlg.ResumeLayout(false);
             this.mecWhere.ResumeLayout(false);
             this.mrcSelect.ResumeLayout(false);

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace pryEDArmanini
 {
-    public partial class frmRepaso : Form
+    public partial class frmConsultaBaseDatos : Form
     {
-        public frmRepaso()
+        public frmConsultaBaseDatos()
         {
             InitializeComponent();
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsBaseDatos objBaseDatos = new clsBaseDatos();
+            objBaseDatos.Listar(dgvConsulta, rtbConsulta.Text);
         }
     }
 }

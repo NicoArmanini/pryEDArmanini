@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaSql));
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.btnListar = new System.Windows.Forms.Button();
             this.cmbConsulta = new System.Windows.Forms.ComboBox();
@@ -39,16 +40,19 @@
             // dgvDatos
             // 
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.Location = new System.Drawing.Point(25, 149);
+            this.dgvDatos.Location = new System.Drawing.Point(33, 183);
+            this.dgvDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.Size = new System.Drawing.Size(750, 287);
+            this.dgvDatos.RowHeadersWidth = 51;
+            this.dgvDatos.Size = new System.Drawing.Size(1000, 353);
             this.dgvDatos.TabIndex = 9;
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(700, 15);
+            this.btnListar.Location = new System.Drawing.Point(933, 18);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.Size = new System.Drawing.Size(100, 28);
             this.btnListar.TabIndex = 7;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
@@ -68,41 +72,50 @@
             "Seleccion Multiatributo por Convolucion",
             "Seleccion Simple",
             "Union"});
-            this.cmbConsulta.Location = new System.Drawing.Point(233, 17);
+            this.cmbConsulta.Location = new System.Drawing.Point(286, 21);
+            this.cmbConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbConsulta.Name = "cmbConsulta";
-            this.cmbConsulta.Size = new System.Drawing.Size(447, 21);
+            this.cmbConsulta.Size = new System.Drawing.Size(620, 24);
             this.cmbConsulta.TabIndex = 6;
             // 
             // lblOperacion
             // 
             this.lblOperacion.AutoSize = true;
-            this.lblOperacion.Location = new System.Drawing.Point(25, 19);
+            this.lblOperacion.BackColor = System.Drawing.Color.Transparent;
+            this.lblOperacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblOperacion.Location = new System.Drawing.Point(33, 23);
+            this.lblOperacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOperacion.Name = "lblOperacion";
-            this.lblOperacion.Size = new System.Drawing.Size(202, 13);
+            this.lblOperacion.Size = new System.Drawing.Size(255, 16);
             this.lblOperacion.TabIndex = 5;
             this.lblOperacion.Text = "Operacion a realizar en la base de Datos:";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblDescripcion.Location = new System.Drawing.Point(25, 47);
+            this.lblDescripcion.Location = new System.Drawing.Point(33, 58);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(750, 90);
+            this.lblDescripcion.Size = new System.Drawing.Size(1000, 111);
             this.lblDescripcion.TabIndex = 10;
             this.lblDescripcion.Text = ".";
             // 
             // frmConsultaSql
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::pryEDArmanini.Properties.Resources.fin;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1062, 567);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.cmbConsulta);
             this.Controls.Add(this.lblOperacion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmConsultaSql";
-            this.Text = "Repaso";
+            this.Text = "Consulta SQL";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
